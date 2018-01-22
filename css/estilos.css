@@ -2,21 +2,46 @@ body{
 	background: #02010a;
 }
 
-
-#contenedor{
-	align-content: center;
-	width: 900px;
-	background: #5b7989;
-	color: white;
-	font-family: 'Dancing Script', cursive;
-	text-shadow: 2px #02010a;
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;
+#contenido{
+	justify-content: center;
 }
 
-nav a{
+header{
+	background: #5b7989;
 	color: white;
+	text-shadow: 0px 2px 0px #02010a;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	margin: 0 auto;
+	width: 900px;
+	padding: 5px;
+}
+
+.contenedorEncabezado{
+	width: 50%
+	border: 10px;
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.titulo{
+	border: 10px;
+	margin: auto;
 	font-family: 'Dancing Script', cursive;
-	text-shadow: 2px #02010a;
-	text-align: left;
+}
+
+.navPrincipal{
+	width: 50%;
+	margin: auto;
+	word-spacing: 50px;
+	font-family: 'Dancing Script', cursive;
+}
+
+#menu{
+	text-align: right;
+}
+
+#menu a{
+	color: white;
+	text-decoration: none;
 }
