@@ -15,7 +15,7 @@ header{
 }
 
 .encabezado{
-	width: 900;
+	width: 900px;
 	border: 10px;
 	display: flex;
 	flex-wrap: nowrap;
@@ -44,6 +44,28 @@ header{
 	text-decoration: none;
 }
 
-#contenido{
-	justify-content: center;
+.seccionContenido1{
+	width: 900px;
+	padding: 5px;
+	margin: 0 auto;
+	background-color: #82c3a6;
+}
+
+.contenedor{
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+	width: 50%;
+}
+
+#imagenCentral{
+	width: 50%;
+}
+
+.seccionContenido2{
+	width: 900px;
+	padding: 5px;
+	margin: 0 auto;
+	background: #d5c75f;
+	border: 1px;
 }
