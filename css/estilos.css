@@ -1,9 +1,6 @@
 body{
 	background: #02010a;
-}
-
-#contenido{
-	justify-content: center;
+	font-family: 'Dancing Script', cursive;
 }
 
 header{
@@ -17,24 +14,25 @@ header{
 	padding: 5px;
 }
 
-.contenedorEncabezado{
-	width: 50%
+.encabezado{
+	width: 900;
 	border: 10px;
 	display: flex;
 	flex-wrap: nowrap;
 }
 
-.titulo{
+#titulo{
+	width: 50%;
 	border: 10px;
 	margin: auto;
-	font-family: 'Dancing Script', cursive;
+	padding-left: 20px;
 }
 
-.navPrincipal{
+.navegador{
 	width: 50%;
 	margin: auto;
 	word-spacing: 50px;
-	font-family: 'Dancing Script', cursive;
+	padding-right: 20px;
 }
 
 #menu{
@@ -44,4 +42,8 @@ header{
 #menu a{
 	color: white;
 	text-decoration: none;
+}
+
+#contenido{
+	justify-content: center;
 }
