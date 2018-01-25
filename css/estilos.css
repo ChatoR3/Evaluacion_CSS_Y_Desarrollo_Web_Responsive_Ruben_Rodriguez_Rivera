@@ -46,14 +46,26 @@ nav a{
 	padding: 30px;
 }
 
+.contenido .section2{
+	background-color: #d5c75f;
+	border: 1px;
+	text-align: center;
+	padding: 30px;
+}
+
 #arbol{
 	width: 70%;
 	box-shadow: 2px 2px #02010a;
 }
 
-.contenido .section2{
-	background-color: #d5c75f;
-	border: 1px;
+#paisaje{
+	width: 50%;
+	box-shadow: 2px 2px #02010a;
+}
+
+#tigre{
+	height: 50%;
+	box-shadow: 2px 2px #02010a;
 }
 
 footer{
@@ -63,4 +75,28 @@ footer{
 	border-bottom-right-radius: 10px;
 	display: flex;
 	flex-wrap: nowrap;
+}
+
+footer[class^='caja']{
+	display: inline-block;
+	height: 150px;
+	width: 350px;
+	text-align: justify;
+	padding: 10px;
+}
+
+.pie1{
+	margin: 50px 20px;
+}
+
+.pie2{
+	margin: 50px 20px;
+}
+
+.pie3{
+	margin: 50px 20px;
+}
+
+.pie4{
+	margin: 50px 20px;
 }
