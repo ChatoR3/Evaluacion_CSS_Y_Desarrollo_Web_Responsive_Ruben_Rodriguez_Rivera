@@ -81,22 +81,43 @@ footer[class^='caja']{
 	display: inline-block;
 	height: 150px;
 	width: 350px;
-	text-align: justify;
+	text-align: center;
 	padding: 10px;
 }
 
 .pie1{
-	margin: 50px 20px;
+	margin: 20px 20px;
+	text-align: center;
+	font-weight: bold;
+	width: 25%;
 }
 
 .pie2{
-	margin: 50px 20px;
+	margin: 20px 20px;
+	text-align: center;
+	font-weight: bold;
+	width: 25%;
 }
 
 .pie3{
-	margin: 50px 20px;
+	margin: 20px 20px;
+	text-align: justify;
+	font-weight: bold;
+	width: 25%;
+}
+
+.pie3 h3{
+	text-align: center;
 }
 
 .pie4{
-	margin: 50px 20px;
+	margin: 20px 20px;
+	text-align: center;
+	font-weight: bold;
+	width: 25%;
+}
+
+.pie3 img{
+	width: 20px;
+	text-align: center;
 }
