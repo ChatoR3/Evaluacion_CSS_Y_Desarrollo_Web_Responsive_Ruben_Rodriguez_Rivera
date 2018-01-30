@@ -138,12 +138,14 @@ footer[class^='pie']{
 .pie1{
 	margin: 20px 20px;
 	text-align: center;
+	font-weight: bold;
 	width: 25%;
 }
 
 .pie2{
 	margin: 20px 20px;
 	text-align: center;
+	font-weight: bold;
 	width: 25%;
 }
 
