@@ -82,6 +82,7 @@ nav a{
 	box-shadow: 2px 2px #02010a;
 }
 
+/*Animación imagen paisajes*/
 .img1 #paisaje:hover{
 	-webkit-transform: rotate(10deg);
 	transform: rotate(10deg);
@@ -96,6 +97,7 @@ nav a{
 	transition-duration: 1s;
 }
 
+/*Animación imagen retratos*/
 .img2 #niña:hover{
 	transform: translateX(20px) translateY(-5px);
 	transition-duration: 1s;
