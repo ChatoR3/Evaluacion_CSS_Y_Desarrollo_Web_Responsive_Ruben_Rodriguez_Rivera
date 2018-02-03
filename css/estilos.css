@@ -1,11 +1,6 @@
 body{
-	font-family: Dancing Script;
 	background-color: #02010a;
-}
-
-.contenido{
-	width: 900px;
-	margin: 0 auto;
+	font-family: Dancing Script;
 }
 
 header{
@@ -18,108 +13,6 @@ header{
 	flex-wrap: nowrap;
 }
 
-h1{
-	width: 50%;
-	border: 10px;
-	margin: auto;
-	padding: 20px;
-	text-align: left;
-}
-
-nav{
-	width: 50%;
-	margin: auto;
-	word-spacing: 50px;
-	padding: 20px;
-	text-align: right;
-}
-
-nav a{
-	text-shadow: none;
-	color: white;
-	text-decoration: underline;
-}
-
-.contenido .section1{
-	background-color: #82c3a6;
-	text-align: center;
-	padding: 30px;
-}
-
-.contenido .section2{
-	background-color: #d5c75f;
-	border: 1px;
-	text-align: center;
-	padding: 30px;
-	display: flex;
-	flex-wrap: nowrap;
-}
-
-.contenido .section2[class^=img]{
-	display: inline-block;
-	height: 150px;
-	width: 350px;
-	text-align: center;
-	padding: 10px;
-}
-
-.img1{
-	margin: 0 auto;
-	text-align: center;
-	font-weight: bold;
-	text-decoration: underline;
-}
-
-.img2{
-	margin: 0 auto;
-	text-align: center;
-	font-weight: bold;
-	text-decoration: underline;
-}
-
-#paisaje{
-	width: 100%;
-	box-shadow: 2px 2px #02010a;
-}
-
-/*Animación imagen paisajes*/
-.img1 #paisaje:hover{
-	-webkit-transform: rotate(10deg);
-	transform: rotate(10deg);
-	transition-duration: 1s;
-	box-shadow: 2px 2px #82c3a6;
-	border: 2px;
-}
-
-.img1 #paisaje{
-	-webkit-transform: rotate(0deg);
-	transform: rotate(0deg);
-	transition-duration: 1s;
-}
-
-/*Animación imagen retratos*/
-.img2 #niña:hover{
-	transform: translateX(20px) translateY(-5px);
-	transition-duration: 1s;
-	box-shadow: 2px 2px #82c3a6;
-	border: 2px;
-}
-
-.img2 #niña{
-	transform: translateX(0px) translateY(0px);
-	transition-duration: 1s;
-}
-
-#niña{
-	width: 100%;
-	box-shadow: 2px 2px #02010a;
-}
-
-#arbol{
-	width: 70%;
-	box-shadow: 2px 2px #02010a;
-}
-
 footer{
 	background-color: #c6d5c5;
 	color: black;
@@ -129,12 +22,45 @@ footer{
 	flex-wrap: nowrap;
 }
 
-footer[class^='pie']{
-	display: inline-block;
-	height: 150px;
-	width: 350px;
+a{
+	color: white;
+	text-shadow: none;
+}
+
+#encabezado{
+	width: 50%;
+	border: 10px;
+	margin: auto;
+	padding: 30px;
+	text-align: left;	
+}
+
+#menu{
+	width: 50%;
+	margin: auto;
+	word-spacing: 50px;
+	padding: 30px;
+	text-align: right;
+}
+
+.contenido{
+	width: 900px;
+	margin: 0 auto;
+}
+
+.seccion1{
+	background-color: #82c3a6;
 	text-align: center;
-	padding: 10px;
+	padding: 30px;
+}
+
+.seccion2{
+	background-color: #d5c75f;
+	border: 1px;
+	text-align: center;
+	padding: 30px;
+	display: flex;
+	flex-wrap: nowrap;
 }
 
 .pie1{
@@ -172,4 +98,83 @@ footer[class^='pie']{
 .pie3 img{
 	width: 20px;
 	text-align: center;
+}
+
+#arbol{
+	width: 60%;
+	box-shadow: 2px 2px #02010a;
+}
+
+#paisaje{
+	height: 50%;
+	margin: 0 auto;
+	word-spacing: 50px;
+	text-align: right;
+	box-shadow: 2px 2px #02010a;
+	border: 2px;
+}
+
+#niña{
+	height: 50%;
+	margin: 0 auto;
+	word-spacing: 50px;
+	text-align: right;
+	box-shadow: 2px 2px #02010a;
+	border: 2px;
+}
+
+/*Animación imagen paisajes rotar 10 grados*/
+#paisaje:hover{
+	-webkit-transform: rotate(10deg);
+	transform: rotate(10deg);
+	transition-duration: 1s;
+	box-shadow: 2px 2px #82c3a6;
+}
+
+/*Animación imagen paisajes rotar a estado original 0 grados*/
+#paisaje{
+	-webkit-transform: rotate(0deg);
+	transform: rotate(0deg);
+	transition-duration: 1s;
+}
+
+/*Animación imagen retratos hacia arriba y a la derecha*/
+#niña:hover{
+	transform: translateX(20px) translateY(-5px);
+	transition-duration: 1s;
+	box-shadow: 2px 2px #82c3a6;
+	border: 2px;
+}
+
+/*Animación imagen retratos a posición original*/
+#niña{
+	transform: translateX(0px) translateY(0px);
+	transition-duration: 1s;
+}
+
+/*Se manda llamar la animación*/
+.contenido {
+	animation-name: contenido-animacion;
+	animation-duration: 1.5s;
+	-webkit-animation-delay: 0s;
+	-moz-animation-delay: 0s;
+	-o-animation-delay: 0s;
+	animation-delay: 0s;
+}
+/*Animación al cargar la página*/
+@keyframes contenido-animacion{
+	0%{
+		position: relative;
+		margin-top: 150%;
+	}
+
+	60%{
+		position: relative;
+		margin-top: -5%;
+	}
+
+	100%{
+		position: relative;
+		margin-top: 0%;
+	}
 }
