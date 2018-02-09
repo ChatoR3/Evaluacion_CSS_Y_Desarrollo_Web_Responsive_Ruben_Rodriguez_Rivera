@@ -69,10 +69,11 @@ nav{
 	text-align: center;
 }
 
-.lago{
+.lagos{
 	float: left;
-	width: 50%;
+	width: 33.33%;
 	text-align: center;
+	background-color: #d5c75f;
 }
 
 .pie{
@@ -102,12 +103,32 @@ nav{
 	width: 75%;
 }
 
-#paisaje{
+
+/*========== Selectores clase / Imágenes ==========*/
+
+.lago{
+	width: 70%;
 	box-shadow: 2px 2px #02010a;
-	width: 75%;
+    margin:10px 10px 0 0;
 }
 
 
+/*========== Filtros para imágenes ==========*/
+
+#lago1{
+	-webkit-filter: blur(10px);
+	filter: blur(10px);
+}
+
+#lago2, #lago4, #lago6{
+	-webkit-filter: graysacale(100%);
+	filter: grayscale(100%);
+}
+
+#lago3{
+	-webkit-filter: sepia(90%);
+	filter: sepia(90%);
+}
 
 
 /*========== Selectores id / Columnas ==========*/
@@ -175,6 +196,11 @@ nav{
 	padding-bottom: 38px;
 	font-weight: bold;
 	
+}
+
+#lagos1, #lagos2, #lagos3,
+#lagos4, #lagos5, #lagos6{
+	width: 33.33%;
 }
 
 
@@ -278,6 +304,11 @@ body.retratos a.retratos{
 	#columna6, #columna7, #columna8, #columna9{
 		width: 100%;
 	}
+
+	#lagos1, #lagos2, #lagos3,
+	#lagos4, #lagos5, #lagos6{
+		width: 100%;
+	} 
 }
 
 @media screen and (max-width: 420px) {
@@ -297,5 +328,10 @@ body.retratos a.retratos{
 	#columna6, #columna7, #columna8, #columna9{
 		width: 100%;
 	}
+
+	#lagos1, #lagos2, #lagos3,
+	#lagos4, #lagos5, #lagos6{
+		width: 100%;
+	} 
 }
 
