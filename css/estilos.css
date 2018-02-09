@@ -82,10 +82,23 @@ nav{
 	background-color: #d5c75f;
 }
 
+.fridas{
+	float: left;
+	width: 33.33%;
+	text-align: center;
+	background-color: #d5c75f;
+}
+
 
 /*========== Selectores clase / Imágenes ==========*/
 
 .lago{
+	width: 70%;
+	box-shadow: 2px 2px #02010a;
+    margin:10px 10px 0 0;
+}
+
+.frida{
 	width: 70%;
 	box-shadow: 2px 2px #02010a;
     margin:10px 10px 0 0;
@@ -115,17 +128,18 @@ nav{
 
 /*========== Filtros para imágenes ==========*/
 
-#lago1{
+#lago1, #frida1{
 	-webkit-filter: blur(10px);
 	filter: blur(10px);
 }
 
-#lago2, #lago4, #lago6{
+#lago2, #lago4, #lago6,
+#frida2, #frida4, #frida6{
 	-webkit-filter: graysacale(100%);
 	filter: grayscale(100%);
 }
 
-#lago3{
+#lago3, #frida3{
 	-webkit-filter: sepia(90%);
 	filter: sepia(90%);
 }
@@ -201,6 +215,11 @@ nav{
 #lagos1, #lagos2, #lagos3,
 #lagos4, #lagos5, #lagos6{
 	width: 33.33%;
+}
+
+#frida1, #frida2, #frida3,
+#frida4, #frida5, #frida6{
+	width: 70%;
 }
 
 
@@ -308,7 +327,12 @@ body.retratos a.retratos{
 	#lagos1, #lagos2, #lagos3,
 	#lagos4, #lagos5, #lagos6{
 		width: 100%;
-	} 
+	}
+
+	#fridas1, #fridas2, #fridas3,
+	#fridas4, #fridas5, #fridas6{
+		width: 100%;
+	}
 }
 
 @media screen and (max-width: 420px) {
@@ -332,6 +356,11 @@ body.retratos a.retratos{
 	#lagos1, #lagos2, #lagos3,
 	#lagos4, #lagos5, #lagos6{
 		width: 100%;
-	} 
+	}
+
+	#fridas1, #fridas2, #fridas3,
+	#fridas4, #fridas5, #fridas6{
+		width: 100%;
+	}
 }
 
