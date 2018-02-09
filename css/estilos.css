@@ -1,4 +1,4 @@
-/*========== Selectores de Etiqueta ==========*/
+/*==========Selectores de Etiqueta==========*/
 a{
 	text-shadow: none;
 	color: white;
@@ -44,7 +44,9 @@ nav{
 	padding-right: 20px;
 }
 
+
 /*========== Selectores de Clase ==========*/
+
 .contenido{
 	width: 900px;
 	margin: 0 auto;
@@ -63,19 +65,6 @@ nav{
 	text-align: center;
 }
 
-.secundaria{
-	float: left;
-	width: 50%;
-	text-align: center;
-}
-
-.lagos{
-	float: left;
-	width: 33.33%;
-	text-align: center;
-	background-color: #d5c75f;
-}
-
 .pie{
 	float: left;
 	width: 900px;
@@ -86,8 +75,23 @@ nav{
 	border-bottom-right-radius: 10px;
 }
 
+.lagos{
+	float: left;
+	width: 33.33%;
+	text-align: center;
+	background-color: #d5c75f;
+}
 
-/*========== Selectores id / Imágenes ==========*/
+
+/*========== Selectores clase / Imágenes ==========*/
+
+.lago{
+	width: 70%;
+	box-shadow: 2px 2px #02010a;
+    margin:10px 10px 0 0;
+}
+
+/*========== Selectores id / Imágenes==========*/
 
 #arbol{
 	width: 45%;
@@ -103,13 +107,9 @@ nav{
 	width: 75%;
 }
 
-
-/*========== Selectores clase / Imágenes ==========*/
-
-.lago{
-	width: 70%;
+#paisaje{
 	box-shadow: 2px 2px #02010a;
-    margin:10px 10px 0 0;
+	width: 75%;
 }
 
 
@@ -131,7 +131,7 @@ nav{
 }
 
 
-/*========== Selectores id / Columnas ==========*/
+/*==========Columnas==========*/
 
 #columna1{
 	width: 50%;
@@ -204,7 +204,7 @@ nav{
 }
 
 
-/*========== Menú página actual sin subrayado ==========*/
+/*Menú página actual sin subrayado */
 
 a:link, a:visited{
 	text-decoration: underline;
@@ -217,7 +217,7 @@ body.retratos a.retratos{
 }
 
 
-/*========== Animaciones ==========*/
+/*==========Animaciones==========*/
 
 @keyframes contenido-animacion{
 	0%{
@@ -271,7 +271,7 @@ body.retratos a.retratos{
 }
 
 
-/*========== Media Queries ==========*/
+/*==========Media Queries==========*/
 
 @media screen and (max-width: 900px) {
 	.contenido{
