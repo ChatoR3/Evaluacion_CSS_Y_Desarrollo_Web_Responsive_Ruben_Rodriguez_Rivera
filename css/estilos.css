@@ -1,6 +1,29 @@
+/*========== Selectores de Etiqueta ==========*/
+a{
+	text-shadow: none;
+	color: white;
+}
+
 body{
 	background-color: #02010a;
 	font-family: Dancing Script;
+}
+
+footer{
+	background-color: #c6d5c5;
+	color: black;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	display: flex;
+	flex-wrap: nowrap;
+	width: 900px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+h1{
+	text-align: left;
+	padding-left: 20px;
 }
 
 header{
@@ -14,13 +37,6 @@ header{
 	margin: 0 auto;
 }
 
-footer{
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
-	text-align: center;
-	margin: 0 auto;
-}
-
 nav{
 	line-height: 59.6px;
 	word-spacing: 30px;
@@ -28,16 +44,7 @@ nav{
 	padding-right: 20px;
 }
 
-a{
-	text-shadow: none;
-	color: white;
-}
-
-h1{
-	text-align: left;
-	padding-left: 20px;
-}
-
+/*========== Selectores de Clase ==========*/
 .contenido{
 	width: 900px;
 	margin: 0 auto;
@@ -56,18 +63,38 @@ h1{
 	text-align: center;
 }
 
-.pie{
+.secundaria{
 	float: left;
-	width: 25%;
+	width: 50%;
 	text-align: center;
 }
 
+.lago{
+	float: left;
+	width: 50%;
+	text-align: center;
+}
 
-/*==========Imágenes==========*/
+.pie{
+	float: left;
+	width: 900px;
+	text-align: center;
+	padding-top: 25px;
+	padding-bottom: 30px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+
+/*========== Selectores id / Imágenes ==========*/
 
 #arbol{
 	width: 45%;
 	box-shadow: 2px 2px #02010a;
+}
+
+#columna8 img{
+	width: 5%;
 }
 
 #niña{
@@ -80,12 +107,10 @@ h1{
 	width: 75%;
 }
 
-#columna8 img{
-	width: 5%;
-}
 
 
-/*==========Columnas==========*/
+
+/*========== Selectores id / Columnas ==========*/
 
 #columna1{
 	width: 50%;
@@ -125,6 +150,8 @@ h1{
 	width: 25%;
 	background-color: #c6d5c5;
 	font-weight: bold;
+	padding-bottom: 0px;
+
 }
 
 #columna7{
@@ -132,12 +159,14 @@ h1{
 	background-color: #c6d5c5;
 	padding-bottom: 3px;
 	font-weight: bold;
+	
 }
 
 #columna8{
 	width: 25%;
 	background-color: #c6d5c5;
 	font-weight: bold;
+	
 }
 
 #columna9{
@@ -145,10 +174,24 @@ h1{
 	background-color: #c6d5c5;
 	padding-bottom: 38px;
 	font-weight: bold;
+	
 }
 
 
-/*==========Animaciones==========*/
+/*========== Menú página actual sin subrayado ==========*/
+
+a:link, a:visited{
+	text-decoration: underline;
+}
+
+body.home a.home,
+body.paisajes a.paisajes,
+body.retratos a.retratos{
+	text-decoration: none;
+}
+
+
+/*========== Animaciones ==========*/
 
 @keyframes contenido-animacion{
 	0%{
@@ -202,7 +245,7 @@ h1{
 }
 
 
-/*==========Media Queries==========*/
+/*========== Media Queries ==========*/
 
 @media screen and (max-width: 900px) {
 	.contenido{
@@ -212,9 +255,13 @@ h1{
 	section{
 		width: 100%;
 	}
+
+	footer{
+		width: 100%;
+	}
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
 	.contenido{
 		width: 100%;
 	}
@@ -223,13 +270,7 @@ h1{
 		width: 100%;
 	}
 
-	#columna1, #columna2, #columna3, #columna4, #columna5,
-	#columna6, #columna7, #columna8, #columna9{
-		width: 100%;
-	}
-
-@media screen and (max-width: 420px) {
-	.contenido{
+	footer{
 		width: 100%;
 	}
 
@@ -238,3 +279,23 @@ h1{
 		width: 100%;
 	}
 }
+
+@media screen and (max-width: 420px) {
+	.contenido{
+		width: 100%;
+	}
+
+	section{
+		width: 100%;
+	}
+
+	footer{
+		width: 100%;
+	}
+
+	#columna1, #columna2, #columna3, #columna4, #columna5,
+	#columna6, #columna7, #columna8, #columna9{
+		width: 100%;
+	}
+}
+
